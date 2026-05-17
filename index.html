@@ -41,7 +41,7 @@
             <fieldset>
                 <legend>Perfil</legend>
 
-                <p>Gênero:</p>
+                <label for="genero">Gênero:</label>
                 <input type="radio" name="userGenero" value="masculino">
                 <label for="userGenero">Masculino</label>
                 
@@ -50,8 +50,9 @@
                 
                 <input type="radio" name="userGenero" value="naoInformar">
                 <label for="userGenero">Prefiro Não Informar</label>
+                <br>
 
-                <p>Estado Civil:</p>
+                <label for="estadoCivil">Estado Civil:</label>
                 <select name="estadoCivil">
                     <option value="naoInformado">Selecione...</option>
                     <option value="solteiro">Solteiro</option>
@@ -60,8 +61,9 @@
                     <option value="viuvo">Viúvo</option>
                     <option value="uniaoEstavel">União Estável</option>
                 </select>
+                <br>
 
-                <p>Estado:</p>
+                <label for="estado">Estado:</label>
                 <select name="estado">
                     <option value="naoInformado">Selecione...</option>
                     <option value="acre">Acre</option>
@@ -92,6 +94,10 @@
                     <option value="sergipe">Sergipe</option>
                     <option value="tocantins">Tocantins</option>
                 </select>
+                <br>
+                
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" placeholder="Digite o nome da sua cidade">
             </fieldset>
 
             <button type="submit">Enviar</button>
