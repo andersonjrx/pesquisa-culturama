@@ -103,7 +103,7 @@
             <fieldset>
                 <legend>Hábitos</legend>
 
-                <p>Redes Sociais</p>
+                <p>Redes Sociais:</p>
                 <input id="instagram" type="checkbox" name="social" value="instagram">
                 <label for="instagram">Instagram</label>
                 <br>
@@ -122,6 +122,22 @@
 
                 <input id="linkedin" type="checkbox" name="social" value="linkedin">
                 <label for="linkedin">LinkedIn</label>
+                <br>
+
+                <label for="musicStyle">Estilo Musical:</label>
+                <input id="musicStyle" type="text" name="userMusicStyle" list="styleTypes">
+                <datalist id="styleTypes">
+                    <option value="Pop">
+                    <option value="Rock">
+                    <option value="Sertanejo">
+                    <option value="Funk">
+                    <option value="MPB">
+                    <option value="Eletrônica">
+                    <option value="Hip-Hop">
+                    <option value="Forró">
+                    <option value="Pagode">
+                    <option value="Axé">
+                </datalist>
             </fieldset>
 
             <button type="submit">Enviar</button>
