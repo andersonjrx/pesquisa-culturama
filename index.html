@@ -41,7 +41,7 @@
             <fieldset>
                 <legend>Perfil</legend>
 
-                <label for="genero">Gênero:</label>
+                <label for="userGenero">Gênero:</label>
                 <input id="masc" type="radio" name="userGenero" value="masculino">
                 <label for="masc">Masculino</label>
                 
@@ -125,7 +125,7 @@
                 <br>
 
                 <label for="musicStyle">Estilo Musical:</label>
-                <input id="musicStyle" type="text" name="userMusicStyle" list="styleTypes">
+                <input id="musicStyle" type="text" name="userMusicStyle" list="styleTypes" placeholder="Ex: Rock">
                 <datalist id="styleTypes">
                     <option value="Pop">
                     <option value="Rock">
@@ -142,6 +142,22 @@
 
                 <label for="favoriteColor">Cor Favorita:</label>
                 <input id="favoriteColor" type="color" name="userFavoriteColor">
+            </fieldset>
+
+            <fieldset>
+                <legend>Opniões</legend>
+                <label for="userServiceOpinion">O que você acha da qualidade do nosso serviço?</label>
+                <input type="radio" name="userServiceOpinion" id="otima" value="otima">
+                <label for="otima">Ótima</label>
+                <input type="radio" name="userServiceOpinion" id="boa" value="boa">
+                <label for="boa">Boa</label>
+                <input type="radio" name="userServiceOpinion" id="regular" value="regular">
+                <label for="regular">Regular</label>
+                <input type="radio" name="userServiceOpinion" id="ruim" value="ruim">
+                <label for="ruim">Ruim</label>
+                <br>
+                <p>Escreva sua opinião:</p>
+                <textarea id="comment" name="userComment" rows="4" cols="50" placeholder="Deixe seus comentários aqui..."></textarea>
             </fieldset>
 
             <button type="submit">Enviar</button>
